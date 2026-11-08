@@ -1,0 +1,301 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>blacklist - fu*k the society</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+/* Pre-paint: hide intro elements only when motion is allowed. Failsafe un-hides if scripts never boot. */
+(function(){var d=document.documentElement;if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('js-intro');setTimeout(function(){if(!d.classList.contains('booted')){d.classList.remove('js-intro');}},5000);}})();
+</script>
+<a class="skip" href="#get-on-the-list">Skip to the signup</a>
+
+<!-- ============ GLOBAL LAYERS (GrainOverlay / Flash / CustomCursor) ============ -->
+<div class="fx-grain" aria-hidden="true"></div>
+<div class="fx-scan" aria-hidden="true"></div>
+<div class="fx-flash" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+<svg class="sr-svg" aria-hidden="true" focusable="false" width="0" height="0">
+  <filter id="bl-distort" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.012 0.18" numOctaves="1" seed="7" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<!-- ============ TOP BAR ============ -->
+<header class="bar">
+  <a class="bar__mark" href="#top" aria-label="BLACK LIST, back to top">
+    <img src="assets/logo-stacked.png" alt="" width="909" height="345">
+  </a>
+  <div class="bar__right">
+    <button class="bar__btn" type="button" id="sound-toggle" aria-pressed="false">
+      <svg class="i i--off" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></svg>
+      <svg class="i i--on" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+      <span class="bar__btn-text">Sound off</span>
+    </button>
+    <a class="bar__cta" href="#get-on-the-list">Get on the list</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HeroSection + LogoReveal ============ -->
+<section class="hero" id="top" aria-label="BLACK LIST">
+  <h1 class="sr-only">BLACK LIST. Your days of playing it safe are over.</h1>
+  <button class="logo-reveal" type="button" id="logo-reveal" aria-label="BLACK LIST logo. Replay the arrival">
+    <span class="logo-reveal__line" aria-hidden="true"></span>
+    <img class="logo-reveal__ghost logo-reveal__ghost--a" src="assets/logo-black.png" alt="" aria-hidden="true">
+    <img class="logo-reveal__ghost logo-reveal__ghost--b" src="assets/logo-black.png" alt="" aria-hidden="true">
+    <img class="logo-reveal__black" src="assets/logo-black.png" alt="" width="1188" height="247">
+    <img class="logo-reveal__list" src="assets/logo-list.png" alt="" width="1188" height="247">
+  </button>
+
+  <p class="hero__tag" data-intro>Your days of playing it safe are over.</p>
+
+  <div class="hero__status" data-intro>
+    <span class="spin" aria-hidden="true"></span>
+    <span>[ STATUS: <b>NOT AUTHORIZED</b> ]</span>
+  </div>
+  <p class="hero__small" data-intro>No approval. No permission. No apologies.</p>
+
+  <div class="hero__foot" data-intro>
+    <span class="mono">FILE BL/26-0001 &middot; CLEARANCE: NONE</span>
+    <a class="hero__down" href="#shout">
+      <span class="mono">Keep going</span>
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ THE SHOUT (GlitchText) ============ -->
+<section class="shout" id="shout" aria-label="Something f**king unexpected is coming">
+  <div class="shout__inner">
+    <p class="shout__note mono"><span>TRANSMISSION 01</span><span>SOURCE: UNKNOWN</span></p>
+    <h2 class="shout__lines">
+      <span class="line"><span class="fit glitch" data-glitch>SOMETHING</span></span>
+      <span class="line"><span class="fit glitch fit--outline" data-glitch>F**KING</span></span>
+      <span class="line"><span class="fit glitch fit--box" data-glitch>UNEXPECTED</span></span>
+      <span class="line"><span class="fit glitch" data-glitch>IS COMING.</span></span>
+    </h2>
+    <p class="shout__note shout__note--end mono"><span>DO NOT FORWARD</span><span>THIS PAGE WILL NOT BE APOLOGISING</span></p>
+  </div>
+</section>
+
+<!-- ============ MARQUEE 1 ============ -->
+<div class="marquee marquee--white" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">We don't give a f**k about your approval <i>✕</i> Too f**king different to fit in <i>✕</i> The good boys can keep their rules <i>✕</i>&nbsp;</span>
+    <span class="marquee__item">We don't give a f**k about your approval <i>✕</i> Too f**king different to fit in <i>✕</i> The good boys can keep their rules <i>✕</i>&nbsp;</span>
+  </div>
+</div>
+
+<!-- ============ SILENCE ============ -->
+<section class="silence" aria-label="Not made for everybody">
+  <p class="silence__a mono" data-reveal>Not made for everybody.</p>
+  <p class="silence__b" data-reveal>Thank f**king god.</p>
+</section>
+
+<!-- ============ ProductTeaser — THE EVIDENCE ============ -->
+<section class="evidence" id="evidence" aria-labelledby="evidence-title">
+  <div class="evidence__grid">
+
+    <header class="evidence__head">
+      <p class="mono evidence__kicker">[ CLASSIFIED / DO NOT DISTRIBUTE ]</p>
+      <h2 class="evidence__title glitch" data-glitch id="evidence-title">THE EVIDENCE.</h2>
+      <p class="evidence__lede">Five frames recovered before anyone could stop them. Four garments. One colour. No context given.</p>
+      <dl class="evidence__meta mono">
+        <div><dt>Files</dt><dd>05 of ??</dd></div>
+        <div><dt>Palette</dt><dd>Black. Only black.</dd></div>
+        <div><dt>Status</dt><dd>Withheld</dd></div>
+      </dl>
+    </header>
+
+    <figure class="ev ev--a" tabindex="0" data-cursor="View file">
+      <div class="ev__frame">
+        <img src="assets/img/01-hoodie-standing.webp" alt="Model in an oversized black hoodie and black cargo trousers with a chain, standing against a grey backdrop" width="933" height="1400" loading="lazy" decoding="async">
+        <div class="ev__hud" aria-hidden="true">
+          <span class="ev__c ev__c--tl"></span><span class="ev__c ev__c--tr"></span><span class="ev__c ev__c--bl"></span><span class="ev__c ev__c--br"></span>
+          <span class="ev__tag ev__tag--tl">SUBJECT_001</span>
+          <span class="ev__tag ev__tag--tr"><i class="rec"></i>REC <time class="ev__clock">00:00:00</time></span>
+        </div>
+        <div class="ev__reveal"><span>PRODUCT_001</span><b>Oversized hoodie</b><span>Colour: black / Status: withheld</span></div>
+      </div>
+      <figcaption class="mono">PRODUCT_001 &mdash; CAM 01</figcaption>
+    </figure>
+
+    <figure class="ev ev--b" tabindex="0" data-cursor="View file">
+      <div class="ev__frame">
+        <img src="assets/img/02-polo.webp" alt="Model in a black polo shirt with hands in pockets, looking down at the camera" width="1050" height="1400" loading="lazy" decoding="async">
+        <div class="ev__hud" aria-hidden="true">
+          <span class="ev__c ev__c--tl"></span><span class="ev__c ev__c--tr"></span><span class="ev__c ev__c--bl"></span><span class="ev__c ev__c--br"></span>
+          <span class="ev__tag ev__tag--tl">SUBJECT_002</span>
+          <span class="ev__tag ev__tag--tr"><i class="rec"></i>REC <time class="ev__clock">00:00:00</time></span>
+        </div>
+        <div class="ev__reveal"><span>PRODUCT_002</span><b>Polo T-shirt</b><span>Colour: black / Status: withheld</span></div>
+      </div>
+      <figcaption class="mono">PRODUCT_002 &mdash; CAM 02</figcaption>
+    </figure>
+
+    <figure class="ev ev--c ev--corrupt" tabindex="0" data-cursor="View file">
+      <div class="ev__frame">
+        <img src="assets/img/03-tee.webp" alt="Model in an oversized black T-shirt and black cargo trousers, head tilted back" width="1050" height="1400" loading="lazy" decoding="async">
+        <div class="ev__tear" aria-hidden="true"></div>
+        <div class="ev__tear" aria-hidden="true"></div>
+        <div class="ev__tear" aria-hidden="true"></div>
+        <div class="ev__hud" aria-hidden="true">
+          <span class="ev__c ev__c--tl"></span><span class="ev__c ev__c--tr"></span><span class="ev__c ev__c--bl"></span><span class="ev__c ev__c--br"></span>
+          <span class="ev__tag ev__tag--tl ev__tag--warn">FILE_CORRUPTED</span>
+          <span class="ev__tag ev__tag--tr"><i class="rec"></i>REC <time class="ev__clock">00:00:00</time></span>
+        </div>
+        <div class="ev__reveal"><span>PRODUCT_003</span><b>Oversized T-shirt</b><span>Colour: black / Status: withheld</span></div>
+      </div>
+      <figcaption class="mono">PRODUCT_003 &mdash; CAM 03 &mdash; SIGNAL LOST</figcaption>
+    </figure>
+
+    <figure class="ev ev--d" tabindex="0" data-cursor="View file">
+      <div class="ev__frame">
+        <img src="assets/img/04-hoodie-seated.webp" alt="Model seated on a stool in a black hoodie, hands in the front pocket" width="1050" height="1400" loading="lazy" decoding="async">
+        <div class="ev__hud" aria-hidden="true">
+          <span class="ev__c ev__c--tl"></span><span class="ev__c ev__c--tr"></span><span class="ev__c ev__c--bl"></span><span class="ev__c ev__c--br"></span>
+          <span class="ev__tag ev__tag--tl">SUBJECT_004</span>
+          <span class="ev__tag ev__tag--tr"><i class="rec"></i>REC <time class="ev__clock">00:00:00</time></span>
+        </div>
+        <div class="ev__reveal"><span>PRODUCT_004</span><b>Hoodie, tonal mark</b><span>Colour: black / Status: withheld</span></div>
+      </div>
+      <figcaption class="mono">PRODUCT_004 &mdash; CAM 04</figcaption>
+    </figure>
+
+    <figure class="ev ev--e" tabindex="0" data-cursor="View file">
+      <div class="ev__frame">
+        <img src="assets/img/05-polo-seated.webp" alt="Model seated on a metal chair in a black textured polo, arm resting on the backrest" width="1400" height="933" loading="lazy" decoding="async">
+        <div class="ev__hud" aria-hidden="true">
+          <span class="ev__c ev__c--tl"></span><span class="ev__c ev__c--tr"></span><span class="ev__c ev__c--bl"></span><span class="ev__c ev__c--br"></span>
+          <span class="ev__tag ev__tag--tl">SUBJECT_005</span>
+          <span class="ev__tag ev__tag--tr"><i class="rec"></i>REC <time class="ev__clock">00:00:00</time></span>
+        </div>
+        <div class="ev__reveal"><span>PRODUCT_005</span><b>Textured polo, tonal mark</b><span>Colour: black / Status: withheld</span></div>
+      </div>
+      <figcaption class="mono">PRODUCT_005 &mdash; CAM 05 &mdash; END OF RECOVERED FOOTAGE</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ============ INTERRUPTION (abrupt cut to white) ============ -->
+<section class="interrupt" aria-label="Your favourite rebels are almost here">
+  <p class="interrupt__text"><span class="interrupt__row">Your favourite</span> <span class="interrupt__row">rebels are</span> <span class="interrupt__row">almost here.</span></p>
+</section>
+
+<!-- ============ ManifestoSection ============ -->
+<section class="manifesto" id="manifesto" aria-label="Manifesto">
+  <div class="manifesto__stage">
+    <p class="manifesto__m m1">They made <br>the rules.</p>
+    <p class="manifesto__m m2">We made <br>our own.</p>
+    <div class="manifesto__m m3">
+      <p class="m3__line">For the ones who never belonged.</p>
+      <p class="m3__line">For the ones who never asked.</p>
+      <p class="m3__line">For the ones who were always too much.</p>
+      <p class="m3__welcome">Welcome to the <span>Black List.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE 2 ============ -->
+<div class="marquee marquee--outline" aria-hidden="true">
+  <div class="marquee__track marquee__track--rev">
+    <span class="marquee__item">We're about to get blacklisted again <i>/</i> Consider yourself warned <i>/</i>&nbsp;</span>
+    <span class="marquee__item">We're about to get blacklisted again <i>/</i> Consider yourself warned <i>/</i>&nbsp;</span>
+  </div>
+</div>
+
+<!-- ============ LaunchCountdown ============ -->
+<section class="count" id="countdown" aria-labelledby="count-title">
+  <div class="count__inner">
+    <div class="count__head">
+      <h2 class="count__title" id="count-title">The clock is ticking.</h2>
+      <p class="count__proto mono"><span class="blink" aria-hidden="true"></span>[ RELEASE PROTOCOL: INITIATED ]</p>
+    </div>
+    <div class="count__clock" id="count-clock" role="timer" aria-live="off">
+      <div class="count__unit"><span class="count__num" data-unit="d">--</span><span class="count__lbl mono">Days</span></div>
+      <span class="count__sep" aria-hidden="true">:</span>
+      <div class="count__unit"><span class="count__num" data-unit="h">--</span><span class="count__lbl mono">Hours</span></div>
+      <span class="count__sep" aria-hidden="true">:</span>
+      <div class="count__unit"><span class="count__num" data-unit="m">--</span><span class="count__lbl mono">Minutes</span></div>
+      <span class="count__sep" aria-hidden="true">:</span>
+      <div class="count__unit"><span class="count__num" data-unit="s">--</span><span class="count__lbl mono">Seconds</span></div>
+    </div>
+    <p class="count__status" id="count-status" hidden></p>
+  </div>
+</section>
+
+<!-- ============ WARNING SLAM ============ -->
+<section class="warned" aria-label="Consider yourself warned">
+  <p class="warned__text"><span class="fit glitch" data-glitch>CONSIDER YOURSELF</span></p>
+  <p class="warned__text"><span class="fit fit--box">WARNED.</span></p>
+</section>
+
+<!-- ============ EmailCapture ============ -->
+<section class="signup" id="get-on-the-list" aria-labelledby="signup-title">
+  <div class="signup__inner">
+    <div class="signup__copy">
+      <p class="mono signup__kicker">[ GET ON THE LIST ]</p>
+      <h2 class="signup__title" id="signup-title">You weren't supposed to find us.</h2>
+      <p class="signup__sub">But since you're here, you might as well get the first warning.</p>
+      <p class="signup__body">Get early access to the collection. Be the first to know when BLACK LIST goes live.</p>
+    </div>
+
+    <form class="form" id="signup-form" novalidate>
+      <div class="form__state" data-state-view="form">
+        <label class="form__label mono" for="signup-email">Email address</label>
+        <div class="form__row">
+          <input class="form__input" id="signup-email" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" placeholder="YOUR EMAIL. NOTHING ELSE." aria-describedby="signup-msg signup-privacy" required>
+          <button class="form__btn magnetic" id="signup-submit" type="submit" data-cursor="Do it">
+            <span class="form__btn-text">Get blacklisted</span>
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+        </div>
+        <!-- honeypot: real people never see or fill this -->
+        <div class="hp" aria-hidden="true"><label for="signup-company">Company</label><input id="signup-company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
+        <label class="form__consent" for="signup-consent">
+          <input id="signup-consent" name="consent" type="checkbox" required>
+          <span class="form__box" aria-hidden="true"></span>
+          <span class="form__consent-text">Send me the launch warning and early access emails. I can unsubscribe whenever I want.</span>
+        </label>
+        <p class="form__msg mono" id="signup-msg" role="status" aria-live="polite"></p>
+        <p class="form__privacy" id="signup-privacy">We store your email only to send BLACK LIST launch and drop emails. Never sold, never shared. One click to leave.</p>
+      </div>
+
+      <div class="form__done" data-state-view="done" hidden tabindex="-1">
+        <p class="form__done-title">You're on the list.</p>
+        <p class="form__done-sub">You'll hear from us when the damage is done.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FinalWarning ============ -->
+<section class="final" aria-label="The last warning">
+  <img class="final__logo" src="assets/logo-primary.png" alt="BLACK LIST" width="1188" height="247" loading="lazy">
+  <p class="final__a">We were never on your list.</p>
+  <p class="final__b">Now you're on ours.</p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <p class="mono">BLACK LIST &copy; 2026</p>
+    <p class="mono">No permission required.</p>
+    <p class="foot__ig" id="foot-ig">
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+      <span class="mono">Instagram: soon</span>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+
+</body></html>
